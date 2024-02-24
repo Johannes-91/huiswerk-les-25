@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huiswerk Les 25</title>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+<style>
+    [class*="col-"] {
+    float: left;
+    padding: 15px;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    .ui-state-active{background-color: red; border-color: red;}
+</style>
+
+<script>
+$(document).ready(function() {
+
+$("#verberg").click(function() {
+$("#accordion").hide();
+});
+
+$("#toon").click(function() {
+$("#accordion").show();
+$(".test").show();
+});
+
+$("#toon").click(function() {
+$("#accordion").show();
+$(".test").show();
+});
+
+$( function() {
+    $( "#accordion" ).accordion();
+  } )
+});
+</script>
+
+<body>
+<div class="col-3"style="min-width: 400px;">
+    <button id="verberg">Verberg</button>
+    <button id="toon">Toon</button>
+    <h1>Overzicht van roofvogels:</h1>
+    <div id="accordion">
+        <h3>Arend</h3>
+        <div>
+        <h3>Arend</h3>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.<p>
+          <img src="arend.jpg" width="300px">
+        </div>
+        <h3>Valk</h3>
+        <div>
+        <h3>Valk</h3>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.<p>
+          <img src="valk.jpg" width="300px">
+        </div>
+        <h3>Buizerd</h3>
+        <div>
+        <h3>Buizerd</h3>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.<p>
+          <img src="buizerd.jpg" width="300px">
+        </div>
+        <h3>Havik</h3>
+        <div>
+        <h3>Havik</h3>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.<p>
+          <img src="havik.jpg" width="300px">
+        </div>
+        <h3>Sperwer</h3>
+        <div>
+        <h3>Sperwer</h3>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.<p>
+          <img src="sperwer.jpg" width="300px">
+        </div>
+      </div>
+      <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+    </div>
+</body>
+</html>
